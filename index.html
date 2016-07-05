@@ -38,15 +38,16 @@
 <br />
 <!-- Nav tabs -->
 <ul class="nav nav-tabs" role="tablist">
-  <li class="active"><a href="#home" role="tab" data-toggle="tab">Enseignant</a></li>
+  <li class="active"><a href="#home" role="tab" data-toggle="tab">Mon rôle</a></li>
+  <!--<li><a href="#calendrier" role="tab" data-toggle="tab">Calendrier</a></li>-->
   <li><a href="#pi" role="tab" data-toggle="tab">Batiment PI</a></li>
   <li><a href="#rythme" role="tab" data-toggle="tab">Rythme</a></li>
   <li><a href="#formation" role="tab" data-toggle="tab">Formation</a></li>
   <li><a href="#eval" role="tab" data-toggle="tab">Evaluations</a></li>
   <li><a href="#departement" role="tab" data-toggle="tab">Département</a></li>
   <li><a href="#informatique" role="tab" data-toggle="tab">Outils</a></li>
- <!-- <li><a href="#gware" role="tab" data-toggle="tab">Aide GWARE</a></li>
-  <li><a href="#vehicule" role="tab" data-toggle="tab">Vehicule</a></li>-->
+ <!-- <li><a href="#gware" role="tab" data-toggle="tab">Aide GWARE</a></li>-->
+  <!--<li><a href="#absence" role="tab" data-toggle="tab">Absence</a></li>-->
   <li><a href="#reprographie" role="tab" data-toggle="tab">Reprographie</a></li>
   <li><a href="#glossaire" role="tab" data-toggle="tab">Glossaire</a></li>
 </ul>
@@ -54,6 +55,17 @@
 
 <!-- Tab panes -->
 <div class="tab-content">
+  <div class="tab-pane" id="absence">
+La liste des étudiants est disponible sur le logiciel <a href="http://mmi.univ-tln.fr/gware" style="text-color=#BFBFBF;">Gware</a>. Chaque enseignant est tenu de faire l'appel et d'entrer les absences sur <a href="http://mmi.univ-tln.fr/gware" style="text-color=#BFBFBF;">Gware</a>.
+
+
+
+
+  </div>
+
+
+
+
   <div class="tab-pane" id="pi">
 	  <h2 class="page-header" >Plan du bâtiment PI</H2>
 	  
@@ -86,6 +98,10 @@
 
 		<p class ="well">Ces activités sont obligatoires pour les enseignants titulaires. 
 		La participation des vacataires ayant des disponibilités est appréciée.</p>
+
+<h2 class="page-header" >En cas d'absence</H2>
+		<div class="well">SI VOUS ETES ABSENT,  prévenir dès que possible le secrétariat (secretariat.mmi@univ-tln.fr) ainsi que Jean-René Tozza (mmi@tozza.net).</div>
+
 	</div> <!-- Fin home-->
   
   
@@ -93,9 +109,8 @@
 	<h2 class="page-header" >Calendrier de l'année</H2>
 	<br/>
 	<div class ="well">
-		Pour plus de précision sur les dates, veuillez vous référer au calendrier de l'année en cours
+		Pour plus de précision sur les dates, veuillez vous référer au <a href=#calendrier>calendrier de l'année en cours en bas de page</a>.
 	</div>
-	
 	<h2 class="page-header" >Les horaires</H2>
 	<p>Les séances de cours durent 1h30 amputées d'une partie de la pause inter-cours</p>
 	<div>
@@ -285,6 +300,12 @@
 	
 	<p class="well">Les étudiants en formation par alernance sont présents 2 semaines par mois.</p>
   
+
+  
+     <h2 class="page-header" id="calendrier">Calendrier</H2>
+  <iframe src="https://calendar.google.com/calendar/embed?src=mmi.toulon%40gmail.com&ctz=Europe/Paris" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
+ 
   </div>
   
   
@@ -313,7 +334,7 @@
 
 <h2 class="page-header" >Assiduité </H2>
 
-<div class = "well">L'assiduité des étudiants à toutes les activités pédagogiques et périodes en milieu professionnel organisées dans le cadre de la formation est obligatoire. <b>Chaque enseignant vérifie l'assiduité de ses étudiants en faisant l'appel à chaque séance. Les absents doivent être reportés sur le gware.</b></div>
+<div class = "well">L'assiduité des étudiants à toutes les activités pédagogiques et périodes en milieu professionnel organisées dans le cadre de la formation est obligatoire. <b>Chaque enseignant vérifie l'assiduité de ses étudiants en faisant l'appel à chaque séance. Les absents doivent être reportés sur le <a href="http://mmi.univ-tln.fr/gware" style="text-color=#BFBFBF;">Gware</a>.</b></div>
 
 <p>
 Toute absence doit être signalée immédiatement au département et doit donner lieu à la remise d’un 
@@ -330,7 +351,7 @@ justificatif au secrétariat du département, 48 heures au plus tard après le r
 
 <h2 class="page-header" >Remise des notes aux étudiants</H2>
 
-<p>Les moyennes sont entrées sur le Gware et communiquées instantanément aux étudiants directement via l'application.  </p>
+<p>Les moyennes sont entrées sur le <a href="http://mmi.univ-tln.fr/gware" style="text-color=#BFBFBF;">Gware</a> et communiquées instantanément aux étudiants directement via l'application.  </p>
 
 <p class="well">ATTENTION, lors de l'envoi par mail des notes aux étudiants les noms ne doivent pas apparaître dans le fichier de notes, seules les colonnes contenant le numéro d'étudiants doivent être conservées.</p>
 
@@ -410,7 +431,7 @@ ainsi obtenue se substituera aux notes du contrôle continu pour le calcul de la
 
 <p>Dans l'emploi du temps, les enseignements apparaissent comme un ensemble de trois mots : 
 <ul>
-	<li>l'acronyme de l'enseignant,</li>li> 
+	<li>l'acronyme de l'enseignant,</li>
 	<li>l'acronyme du cours,</li> 
 	<li>le numéro de la salle. </li>
 </ul>
@@ -553,7 +574,14 @@ Service du personnel
 
 <h2 class="page-header" >Reprographie des documents de cours </H2>
 
-<p>à rédiger</p>
+<p>L'imprimante se trouve dans la salle des profs au 3e étage du bat Coudon.</p>
+
+<p>Vous pouvez aussi envoyer directement vos documents au service  reprographie de l'université, soit en les laissant au secrétariat, soit en envoyant directement vos demandes à  : repro@univ-tln.fr
+Joindre à votre demande le "Bon pour reprographie".</p>
+
+<p>Vos impressions seront livrées au Casier MMI à l'entrée : demandez au PC sécurité en entrant.</p>
+
+<p>A noter : dans la salle des profs, à côté de la photocopieuse, se trouve également les copies pour les examens et les brouillons.</p>
 
 
 
@@ -567,7 +595,9 @@ Service du personnel
 
 <H2 class="page-header" >Connexion Internet</H2>
 
-<p>à compléter</p>
+<p>Une fois votre dossier de vacataire indiqué comme recevable, contacter la DSIUN (service informatique cariou@univ-tln.fr) afin que le login et mot de passe soient créés. </p> 
+
+<p>Il faut leur transmettre : la photocopie de votre carte d?identité et la charte informatique (disponible sur l?intranet) signée.</p>
 
 <H2 class="page-header" >Mails universitaire, listes de diffusion et annuaire</H2>
 
@@ -609,12 +639,64 @@ Service du personnel
 
 
 <H2 class="page-header" >Outils Web</H2>
-<ul>
+<!--<ul>
+
 <li><a href="http://mmi.univ-tln.fr/gware" style="text-color=#BFBFBF;">Gware</a> : <a href="http://mmi.univ-tln.fr/gware">http://mmi.univ-tln.fr/gware</a> et sur l' <b>espace de travail</b> du gware (trombinoscopes, listes des étudiants, comptes rendus de conseils pédagogiques et conseils de département, etc.)</li>
 <li>Wiki : <a href="http://serecom.univ-tln.fr/cours">http://serecom.univ-tln.fr/cours</a></li>
 <li>Règlement des projets tuteurés : <a href="http://serecom.univ-tln.fr/ptut">http://serecom.univ-tln.fr/ptut</a> </li>
 <li>Règlement des stages : <a href="http://serecom.univ-tln.fr/stages">http://serecom.univ-tln.fr/stages</a> </li>
-</ul>
+</ul> -->
+
+<H3 class="page-header" >Internes au département MMI</H3>
+
+
+<table class="table-striped table-hover" style="width:80%;">
+	<tr>
+		<th>Nom</th>
+		<th>Description </th>
+	</tr>
+	<tr>
+		<td><a href="http://mmi.univ-tln.fr/gware" style="text-color=#BFBFBF;">Gware</a></td>
+		<td>emploi du temps, suivi des absence, saisie des notes.</td>
+	</tr>
+	<tr>
+		<td><a href="http://mmi.univ-tln.fr/gware" style="text-color=#BFBFBF;">Espace de travail du Gware</a></td>
+		<td>trombinoscopes, listes des étudiants, comptes rendus de conseils pédagogiques et conseils de département, etc.</td>
+	</tr>	
+	<tr>
+		<td><a href="http://serecom.univ-tln.fr/cours">Wiki</a></td>
+		<td>Plateforme de cours en ligne </td>
+	</tr>
+	<tr>
+		<td><a href="http://serecom.univ-tln.fr/stages">Stages</a></td>
+		<td>Réglement des stages</td>
+	</tr>
+	<tr>
+		<td><a href="http://serecom.univ-tln.fr/stages">Ptut</a></td>
+		<td>Réglement des projets tuteurés</td>
+	</tr>
+	<tr>
+		<td><a href="http://serecom.univ-tln.fr/mozaik">Mozaik</a></td>
+		<td>Site des projets tuteurés</td>
+	</tr>
+</table>
+
+<H3 class="page-header" >Mise à disposition par l'Université de Toulon</H3>
+
+<table class="table-striped table-hover" style="width:80%;">
+	<tr>
+		<td><a href="http://moodle.univ-tln.fr">Moodle</a></td>
+		<td>Plateforme pédagogique de l'université de Toulon</td>
+	</tr>
+	<tr>
+		<td><a href="http://edt.univ-tln.fr">Hyperplanning</a></td>
+		<td>Les emplois du temps de l'Université de Toulon</td>
+	</tr>
+	<tr>
+		<td><a href="http://annuaire.univ-tln.fr">Annuaire</a></td>
+		<td>Annuaire de l'Université de Toulon</td>
+	</tr>
+</table>
 
 
 
